@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedImageCollectionViewCell" id="oqj-LF-6U9" customClass="FeedImageCollectionViewCell" customModule="Dem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="314"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yji-nU-B7N">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="314"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple1" translatesAutoresizingMaskIntoConstraints="NO" id="ewl-5j-CeI" customClass="EEZoomableImageView" customModule="Dem" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="314"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ewl-5j-CeI" firstAttribute="centerY" secondItem="yji-nU-B7N" secondAttribute="centerY" id="5yW-tk-PxZ"/>
+                    <constraint firstItem="ewl-5j-CeI" firstAttribute="height" secondItem="yji-nU-B7N" secondAttribute="height" id="a3R-Kg-6Xp"/>
+                    <constraint firstItem="ewl-5j-CeI" firstAttribute="width" secondItem="yji-nU-B7N" secondAttribute="width" id="cw1-rR-QrZ"/>
+                    <constraint firstItem="ewl-5j-CeI" firstAttribute="centerX" secondItem="yji-nU-B7N" secondAttribute="centerX" id="e4E-3x-OCC"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="414" height="314"/>
+            <connections>
+                <outlet property="imgView" destination="ewl-5j-CeI" id="dQO-Dn-5sV"/>
+            </connections>
+            <point key="canvasLocation" x="75" y="53"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="apple1" width="2000" height="1333.5"/>
+    </resources>
+</document>
